@@ -42,6 +42,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer f.Close()
 
 	var ln, valid int
 	scanner := bufio.NewScanner(f)

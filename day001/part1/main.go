@@ -41,6 +41,7 @@ func readFromFile(name string) ([]int, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer f.Close()
 
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
