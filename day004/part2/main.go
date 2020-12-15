@@ -30,7 +30,6 @@ var (
 	pidRegexp       = regexp.MustCompile("^[0-9]{9}$")
 	eyeColorRegexp  = regexp.MustCompile("^(amb|blu|brn|gry|grn|hzl|oth)$")
 	hairColorRegexp = regexp.MustCompile("^#[0-9a-f]{6}$")
-	heightRegexp    = regexp.MustCompile("^[0-9]{2,3}(cm|in)$")
 )
 
 func isValidYear(year string, min, max int) bool {
